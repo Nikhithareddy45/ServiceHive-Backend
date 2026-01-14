@@ -21,4 +21,10 @@ app.use("/api/gigs", gigRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/bids", bidRoutes);
 
+
+app.get("/", (req, res) => {
+  res.send("GigFlow API is running 🚀");
+});
+
+
 export default app;
